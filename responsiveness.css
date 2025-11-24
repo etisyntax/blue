@@ -48,22 +48,23 @@
     /* Hamburger button */
     .menu-btn {
         display: block !important;
-        position: fixed;
-        top: 18px;
-        left: 20px;
-        font-size: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 28px;
         color: #fff;
         cursor: pointer;
         z-index: 300; /* higher than header */
+        margin-right: 10px; /* space between hamburger and logo */
     }
 
     /* Ensure header doesn’t block menu button */
     .header {
-        position: fixed;
-        top: 0;
-        left: 0 !important;
-        width: 100%;
-        z-index: 250;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 15px;
+        gap: 10px;
     }
 
     /* Main content adjustments for mobile */
@@ -73,3 +74,4 @@
         padding: 90px 18px 20px !important;
     }
 }
+
