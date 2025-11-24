@@ -65,6 +65,8 @@
         justify-content: flex-start;
         padding: 0 15px;
         gap: 10px;
+        left: 0;
+        width: 100%;
     }
 
     /* Main content adjustments for mobile */
@@ -74,4 +76,5 @@
         padding: 90px 18px 20px !important;
     }
 }
+
 
